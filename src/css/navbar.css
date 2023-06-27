@@ -1,0 +1,68 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #1e3050;
+}
+
+.div_logo_navbar {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: auto;
+  height: 90%;
+  padding: 3px;
+}
+
+.div_auth_navbar {
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 6px;
+  margin-right: auto;
+}
+
+.btn_connexion {
+  margin: auto;
+}
+
+.btn_inscription {
+  margin: auto;
+}
+
+.div_marketplace_navbar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.div_navigation_navbar {
+  width: 25%;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_accueil,
+.btn_roadmap,
+.btn_team {
+  color: white;
+  margin: auto;
+}
+
+button {
+  color: #ffb700;
+  border: none;
+  background-color: #1e3050;
+  text-transform: uppercase;
+  font-family: Lexend Deca;
+  font-size: 15px;
+}
