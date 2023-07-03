@@ -1,15 +1,15 @@
-import './App.css';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Index from './pages/Index';
 import React from 'react';
+import Index from './pages/Index';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Index />} />
+          <Route path="/" element={<Index />} />
           <Route path="/*" element={<Index />} />
+          <Route path="/home" element={<Index />} />
         </Routes>
       </BrowserRouter>
     </div>
