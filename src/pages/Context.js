@@ -16,20 +16,7 @@ const Context = () => {
       }}
     >
       <Col span={12} md={3}>
-        <Text
-          size={25}
-          color="white"
-          styles={{
-            '@media (max-width: 1000px)': {
-              textAlign: 'center',
-              backgroundColor: 'blue',
-            },
-            '@media (max-width: 400px)': {
-              textAlign: 'left',
-              backgroundColor: 'red',
-            },
-          }}
-        >
+        <Text size={25} color="white">
           Explorez l'essence de la créativité musicale. <br />
           Samples et échantillons d'exception pour sublimer votre musique.
         </Text>
@@ -44,8 +31,8 @@ const Context = () => {
         <video
           style={{
             borderRadius: 25,
-            width: '100%',
-            height: '100%',
+            width: '550px',
+            height: '650px',
           }}
           autoPlay
         >

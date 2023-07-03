@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/Navbar';
-import Context from '../components/Context';
+import Context from './Context';
 
 function Home() {
   return (
