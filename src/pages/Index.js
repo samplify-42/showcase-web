@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../components/Navbar';
 
-function Home() {
+function Index() {
   return (
     <section className="home">
       <div className="home_navbar">
@@ -11,4 +11,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Index;
