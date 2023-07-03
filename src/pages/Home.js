@@ -4,7 +4,13 @@ import Context from '../components/Context';
 
 function Home() {
   return (
-    <section className="home">
+    <section
+      style={{
+        margin: 0,
+        padding: 0,
+      }}
+      className="home"
+    >
       <div className="home_navbar">
         <NavBar isConnected={false} />
         <Context />

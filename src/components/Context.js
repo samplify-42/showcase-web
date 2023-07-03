@@ -16,7 +16,20 @@ const Context = () => {
       }}
     >
       <Col span={12} md={3}>
-        <Text size={25} color="white">
+        <Text
+          size={25}
+          color="white"
+          styles={{
+            '@media (max-width: 1000px)': {
+              textAlign: 'center',
+              backgroundColor: 'blue',
+            },
+            '@media (max-width: 400px)': {
+              textAlign: 'left',
+              backgroundColor: 'red',
+            },
+          }}
+        >
           Explorez l'essence de la créativité musicale. <br />
           Samples et échantillons d'exception pour sublimer votre musique.
         </Text>
