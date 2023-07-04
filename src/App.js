@@ -1,5 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import fullpage from 'fullpage.js';
+import Context from './pages/Context';
+import Navbar from './components/Navbar';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -12,19 +14,14 @@ function App() {
 
   return (
     <div className="App" ref={fullpageRef}>
-      <section
-        className="section"
-        style={{
-          backgroundColor: 'blue',
-        }}
-      >
+      <section className="section">
         <div
           style={{
             width: '100vw',
             height: '100vh',
           }}
         >
-          <h1>Section 1</h1>
+          <Context />
         </div>
       </section>
       <section
