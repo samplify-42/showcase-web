@@ -1,6 +1,7 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import fullpage from 'fullpage.js';
 import Context from './pages/Context';
+import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -10,74 +11,55 @@ function App() {
     new fullpage(fullpageRef.current, {
       licenseKey: 'undefined',
       responsiveSlides: true,
+      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+      menu: '#myMenu',
     });
   }, []);
 
   return (
     <div className="App" ref={fullpageRef}>
-      <section className="section" id="section1">
-        <div
-          style={{
-            width: '100vw',
-            height: '100vh',
-          }}
-        >
-          <Context />
-        </div>
-      </section>
       <section
-        id="section2"
         className="section"
+        href="#firstPage"
         style={{
           width: '100vw',
           height: '100vh',
-          backgroundColor: 'blue',
         }}
       >
-        <div
+        <Context />
+      </section>
+      <section className="section">
+        <Flex
           style={{
             width: '100vw',
             height: '100vh',
           }}
         >
           <h1>Section 2</h1>
-        </div>
+        </Flex>
       </section>
-      <section
-        id="section3"
-        className="section"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: 'blue',
-        }}
-      >
-        <div
+      <section className="section">
+        <Flex
           style={{
             width: '100vw',
             height: '100vh',
           }}
         >
           <h1>Section 3</h1>
-        </div>
+        </Flex>
       </section>
       <section
-        id="section4"
         className="section"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: 'blue',
-        }}
+        // id="section4"
       >
-        <div
+        <Flex
           style={{
             width: '100vw',
             height: '100vh',
           }}
         >
           <h1>Section 4</h1>
-        </div>
+        </Flex>
       </section>
     </div>
   );
