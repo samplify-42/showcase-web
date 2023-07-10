@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../css/navbar.css';
 import Logo from '../images/logo.png';
 
 function Navbar() {
+  console.log('hell');
+
   return (
     <section id="#myMenu" className="navbar navbar-fixed">
       <div className="div_logo_navbar">

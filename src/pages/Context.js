@@ -1,7 +1,6 @@
 import {Grid, Col, Text, Flex} from '@mantine/core';
 import React from 'react';
 import video from '../images/video.mp4';
-import Navbar from '../components/Navbar';
 
 const Context = () => {
   return (
@@ -12,7 +11,6 @@ const Context = () => {
         height: '100vh',
       }}
     >
-      <Navbar />
       <Grid
         style={{
           width: '100%',
@@ -40,9 +38,6 @@ const Context = () => {
         >
           <div
             style={{
-              borderRadius: 25,
-              width: '550px',
-              height: '650px',
               display: 'flex',
             }}
           >
@@ -50,9 +45,12 @@ const Context = () => {
               style={{
                 width: '100%',
                 height: '100%',
+                borderRadius: '25px',
               }}
               autoPlay
+              loop
               playsInline
+              muted
             >
               <source src={video} />
             </video>

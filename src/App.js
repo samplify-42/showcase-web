@@ -14,6 +14,8 @@ function App() {
       anchors: ['context', 'tuto', 'security', 'roadmap', 'team'],
       menu: '#myMenu',
       fixedElements: '#navbar',
+      autoScrolling: true,
+      scrollHorizontally: true,
     });
   }, []);
 
