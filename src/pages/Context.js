@@ -14,7 +14,6 @@ const Context = () => {
     >
       <Navbar />
       <Grid
-        gutter="lg"
         style={{
           width: '100%',
           height: '100%',
@@ -39,16 +38,25 @@ const Context = () => {
           span={12}
           md={5}
         >
-          <video
+          <div
             style={{
               borderRadius: 25,
               width: '550px',
               height: '650px',
+              display: 'flex',
             }}
-            autoPlay
           >
-            <source src={video} />
-          </video>
+            <video
+              style={{
+                width: '100%',
+                height: '100%',
+              }}
+              autoPlay
+              playsInline
+            >
+              <source src={video} />
+            </video>
+          </div>
         </Col>
       </Grid>
     </Flex>

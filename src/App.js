@@ -9,12 +9,13 @@ function App() {
   useEffect(() => {
     new fullpage(fullpageRef.current, {
       licenseKey: 'undefined',
+      responsiveSlides: true,
     });
   }, []);
 
   return (
     <div className="App" ref={fullpageRef}>
-      <section className="section">
+      <section className="section" id="section1">
         <div
           style={{
             width: '100vw',
@@ -25,6 +26,7 @@ function App() {
         </div>
       </section>
       <section
+        id="section2"
         className="section"
         style={{
           width: '100vw',
@@ -42,6 +44,7 @@ function App() {
         </div>
       </section>
       <section
+        id="section3"
         className="section"
         style={{
           width: '100vw',
@@ -59,6 +62,7 @@ function App() {
         </div>
       </section>
       <section
+        id="section4"
         className="section"
         style={{
           width: '100vw',
