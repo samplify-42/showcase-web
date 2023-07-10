@@ -5,6 +5,14 @@
   background-color: #1e3050;
 }
 
+.navbar.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .div_logo_navbar {
   height: 100%;
   width: 10%;

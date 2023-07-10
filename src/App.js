@@ -11,16 +11,19 @@ function App() {
     new fullpage(fullpageRef.current, {
       licenseKey: 'undefined',
       responsiveSlides: true,
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+      anchors: ['context', 'tuto', 'security', 'roadmap', 'team'],
       menu: '#myMenu',
+      fixedElements: '#navbar',
     });
   }, []);
 
   return (
     <div className="App" ref={fullpageRef}>
+      <section id="navbar">
+        <Navbar />
+      </section>
       <section
         className="section"
-        href="#firstPage"
         style={{
           width: '100vw',
           height: '100vh',
@@ -33,9 +36,10 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
+            paddingTop: '50px',
           }}
         >
-          <h1>Section 2</h1>
+          <h1>Tuto</h1>
         </Flex>
       </section>
       <section className="section">
@@ -43,22 +47,32 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
+            paddingTop: '50px',
           }}
         >
-          <h1>Section 3</h1>
+          <h1>Security</h1>
         </Flex>
       </section>
-      <section
-        className="section"
-        // id="section4"
-      >
+      <section className="section">
         <Flex
           style={{
             width: '100vw',
             height: '100vh',
+            paddingTop: '50px',
           }}
         >
-          <h1>Section 4</h1>
+          <h1>roadmap</h1>
+        </Flex>
+      </section>
+      <section className="section">
+        <Flex
+          style={{
+            width: '100vw',
+            height: '100vh',
+            paddingTop: '50px',
+          }}
+        >
+          <h1>team</h1>
         </Flex>
       </section>
     </div>
