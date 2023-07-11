@@ -39,6 +39,7 @@ function Team() {
           marginBottom: '50px',
           justifyContent: 'space-evenly',
           width: '60%',
+          height: '326px',
         }}
       >
         <Flex
@@ -46,9 +47,10 @@ function Team() {
             width: '200px',
             marginRight: '10px',
             justifyContent: 'center',
+            boxShadow: '2px 10px 9px black',
           }}
         >
-          <Paper shadow="md" radius="md" p="md" withBorder>
+          <Paper shadow="lg" radius="md" p="md" withBorder>
             <Image
               style={{width: '166px', marginBottom: '20px'}}
               alt="image_equipe_1"
@@ -76,7 +78,13 @@ function Team() {
             </Text>
           </Paper>
         </Flex>
-        <Flex style={{width: '200px', marginRight: '10px'}}>
+        <Flex
+          style={{
+            width: '200px',
+            marginRight: '10px',
+            boxShadow: '2px 10px 9px black',
+          }}
+        >
           <Paper shadow="md" radius="md" p="md" withBorder>
             <Image
               style={{width: '100%', borderRadius: 15, marginBottom: '20px'}}
@@ -105,7 +113,7 @@ function Team() {
             </Text>
           </Paper>
         </Flex>
-        <Flex style={{width: '200px'}}>
+        <Flex style={{width: '200px', boxShadow: '2px 10px 9px black'}}>
           <Paper shadow="md" radius="md" p="md" withBorder>
             <Image
               style={{width: '166px', borderRadius: 15, marginBottom: '20px'}}
@@ -136,7 +144,13 @@ function Team() {
         </Flex>
       </Flex>
       <Flex style={{justifyContent: 'space-evenly', width: '800px'}}>
-        <Flex style={{width: '200px', marginRight: '10px'}}>
+        <Flex
+          style={{
+            width: '200px',
+            marginRight: '10px',
+            boxShadow: '2px 10px 9px black',
+          }}
+        >
           <Paper shadow="md" radius="md" p="md" withBorder>
             <Image
               style={{width: '100%', borderRadius: 15, marginBottom: '20px'}}
@@ -165,7 +179,7 @@ function Team() {
             </Text>
           </Paper>
         </Flex>
-        <Flex style={{width: '200px'}}>
+        <Flex style={{width: '200px', boxShadow: '2px 10px 9px black'}}>
           <Paper shadow="md" radius="md" p="md" withBorder>
             <Image
               style={{width: '100%', borderRadius: 15, marginBottom: '20px'}}
