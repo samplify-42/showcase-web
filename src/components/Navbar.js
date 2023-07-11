@@ -1,10 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import '../css/navbar.css';
 import Logo from '../images/logo.png';
 
 function Navbar() {
-  console.log('hell');
-
   return (
     <section id="#myMenu" className="navbar navbar-fixed">
       <div className="div_logo_navbar">
@@ -20,16 +18,16 @@ function Navbar() {
           Accueil
         </a>
         <a href="#tuto" className="btn_roadmap">
-          Tuto
+          Tutoriel
         </a>
         <a href="#security" className="btn_roadmap">
-          security
+          Securité
         </a>
         <a href="#roadmap" className="btn_team">
-          roadmap
+          Roadmap
         </a>
         <a href="#team" className="btn_team">
-          team
+          Team
         </a>
       </div>
     </section>

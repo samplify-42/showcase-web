@@ -16,13 +16,20 @@ const Context = () => {
           width: '100%',
           height: '100%',
           margin: 0,
-          backgroundColor: '#284B63',
+          backgroundColor: 'black',
           justifyContent: 'space-evenly',
           alignItems: 'center',
         }}
       >
-        <Col span={12} md={3}>
+        <Col md={4} style={{marginLeft: '50px'}}>
           <Text size={25} color="white">
+            Explorez l'essence de la créativité musicale ! Samples et
+            échantillons d'exception pour sublimer votre musique.
+          </Text>
+          <br />
+          <Text size={10} color="gray">
+            Explorez l'essence de la créativité musicale. <br />
+            Samples et échantillons d'exception pour sublimer votre musique.
             Explorez l'essence de la créativité musicale. <br />
             Samples et échantillons d'exception pour sublimer votre musique.
           </Text>

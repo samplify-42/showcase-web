@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react';
 import fullpage from 'fullpage.js';
-import Context from './pages/Context';
+import Contextt from './pages/Contextt';
 import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
+import Context from './pages/Context';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -16,6 +17,10 @@ function App() {
       fixedElements: '#navbar',
       autoScrolling: true,
       scrollHorizontally: true,
+
+      afterLoad: (origin, destination) => {
+        console.log('hello');
+      },
     });
   }, []);
 
@@ -27,11 +32,11 @@ function App() {
       <section
         className="section"
         style={{
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
         }}
       >
-        <Context />
+        <Contextt />
       </section>
       <section className="section">
         <Flex
