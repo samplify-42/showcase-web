@@ -3,6 +3,7 @@ import fullpage from 'fullpage.js';
 import Context from './pages/Context';
 import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
+import Team from './pages/Team';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -75,10 +76,9 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
-            paddingTop: '50px',
           }}
         >
-          <h1>team</h1>
+          <Team />
         </Flex>
       </section>
     </div>
