@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
 import fullpage from 'fullpage.js';
-import Contextt from './pages/Contextt';
+import Context from './pages/Context';
 import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
-import Context from './pages/Context';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -32,11 +31,11 @@ function App() {
       <section
         className="section"
         style={{
-          width: '100%',
-          height: '100%',
+          width: '100vw',
+          height: '100vh',
         }}
       >
-        <Contextt />
+        <Context />
       </section>
       <section className="section">
         <Flex

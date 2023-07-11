@@ -7,63 +7,55 @@ const Context = () => {
     <Flex
       direction={'column'}
       style={{
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
       }}
     >
-      <Grid
+      <video
         style={{
           width: '100%',
           height: '100%',
-          margin: 0,
+        }}
+        data-keepplaying
+        autoPlay
+        loop
+        playsInline
+        muted
+      >
+        <source src={video} />
+      </video>
+      <Flex
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
           backgroundColor: 'black',
-          justifyContent: 'space-evenly',
+          opacity: '40%',
+        }}
+      ></Flex>
+      <Flex
+        style={{
+          width: '50%',
+          height: '100%',
+          position: 'absolute',
+          justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        <Col md={4} style={{marginLeft: '50px'}}>
-          <Text size={25} color="white">
-            Explorez l'essence de la créativité musicale ! Samples et
-            échantillons d'exception pour sublimer votre musique.
+        <Flex direction={'column'}>
+          <Text weight={'bold'} align="center" size={35} color="white">
+            Explorez l'essence de la créativité musicale <br />
+            Samples et échantillons d'exception pour sublimer votre musique
           </Text>
-          <br />
-          <Text size={10} color="gray">
-            Explorez l'essence de la créativité musicale. <br />
-            Samples et échantillons d'exception pour sublimer votre musique.
-            Explorez l'essence de la créativité musicale. <br />
-            Samples et échantillons d'exception pour sublimer votre musique.
+          <Text align="center" size={10} color="gray">
+            Plongez dans une collection unique de samples NFT et laissez votre
+            créativité s'envoler.
           </Text>
-        </Col>
-        <Col
-          style={{
-            justifyContent: 'center',
-            alignSelf: 'center',
-            display: 'flex',
-          }}
-          span={12}
-          md={5}
-        >
-          <div
-            style={{
-              display: 'flex',
-            }}
-          >
-            <video
-              style={{
-                width: '100%',
-                height: '100%',
-                borderRadius: '25px',
-              }}
-              autoPlay
-              loop
-              playsInline
-              muted
-            >
-              <source src={video} />
-            </video>
-          </div>
-        </Col>
-      </Grid>
+        </Flex>
+      </Flex>
     </Flex>
   );
 };
