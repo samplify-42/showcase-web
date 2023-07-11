@@ -4,6 +4,7 @@ import Context from './pages/Context';
 import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
 import Team from './pages/Team';
+import Tutorial from './pages/Tutorial';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -43,10 +44,9 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
-            paddingTop: '50px',
           }}
         >
-          <h1>Tuto</h1>
+          <Tutorial />
         </Flex>
       </section>
       <section className="section">
