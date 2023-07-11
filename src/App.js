@@ -1,5 +1,8 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import fullpage from 'fullpage.js';
+import Context from './pages/Context';
+import {Flex} from '@mantine/core';
+import Navbar from './components/Navbar';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -7,76 +10,76 @@ function App() {
   useEffect(() => {
     new fullpage(fullpageRef.current, {
       licenseKey: 'undefined',
+      responsiveSlides: true,
+      anchors: ['context', 'tuto', 'security', 'roadmap', 'team'],
+      menu: '#myMenu',
+      fixedElements: '#navbar',
+      autoScrolling: true,
+      scrollHorizontally: true,
+
+      afterLoad: (origin, destination) => {
+        console.log('hello');
+      },
     });
   }, []);
 
   return (
     <div className="App" ref={fullpageRef}>
-      <section
-        className="section"
-        style={{
-          backgroundColor: 'blue',
-        }}
-      >
-        <div
-          style={{
-            width: '100vw',
-            height: '100vh',
-          }}
-        >
-          <h1>Section 1</h1>
-        </div>
+      <section id="navbar">
+        <Navbar />
       </section>
       <section
         className="section"
         style={{
           width: '100vw',
           height: '100vh',
-          backgroundColor: 'blue',
         }}
       >
-        <div
-          style={{
-            width: '100vw',
-            height: '100vh',
-          }}
-        >
-          <h1>Section 2</h1>
-        </div>
+        <Context />
       </section>
-      <section
-        className="section"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: 'blue',
-        }}
-      >
-        <div
+      <section className="section">
+        <Flex
           style={{
             width: '100vw',
             height: '100vh',
+            paddingTop: '50px',
           }}
         >
-          <h1>Section 3</h1>
-        </div>
+          <h1>Tuto</h1>
+        </Flex>
       </section>
-      <section
-        className="section"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: 'blue',
-        }}
-      >
-        <div
+      <section className="section">
+        <Flex
           style={{
             width: '100vw',
             height: '100vh',
+            paddingTop: '50px',
           }}
         >
-          <h1>Section 4</h1>
-        </div>
+          <h1>Security</h1>
+        </Flex>
+      </section>
+      <section className="section">
+        <Flex
+          style={{
+            width: '100vw',
+            height: '100vh',
+            paddingTop: '50px',
+          }}
+        >
+          <h1>roadmap</h1>
+        </Flex>
+      </section>
+      <section className="section">
+        <Flex
+          style={{
+            width: '100vw',
+            height: '100vh',
+            paddingTop: '50px',
+          }}
+        >
+          <h1>team</h1>
+        </Flex>
       </section>
     </div>
   );

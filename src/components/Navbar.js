@@ -4,21 +4,31 @@ import Logo from '../images/logo.png';
 
 function Navbar() {
   return (
-    <section className="navbar">
+    <section id="#myMenu" className="navbar navbar-fixed">
       <div className="div_logo_navbar">
-        <img className="logo" alt="Samplify" src={Logo}></img>
-      </div>
-      <div className="div_auth_navbar">
-        <button className="btn_connexion">Connexion</button>
-        <button className="btn_inscription">Inscription</button>
+        <a href="#context">
+          <img className="logo" alt="Samplify" src={Logo}></img>
+        </a>
       </div>
       <div className="div_marketplace_navbar">
-        <button className="btn_marketplace">MarketPlace</button>
+        <button style={{fontWeight: 'bold'}}>MarketPlace</button>
       </div>
       <div className="div_navigation_navbar">
-        <button className="btn_accueil">Accueil</button>
-        <button className="btn_roadmap">RoadMap</button>
-        <button className="btn_team">Team</button>
+        <a href="#context" className="btn_accueil">
+          Accueil
+        </a>
+        <a href="#tuto" className="btn_roadmap">
+          Tutoriel
+        </a>
+        <a href="#security" className="btn_roadmap">
+          Securité
+        </a>
+        <a href="#roadmap" className="btn_team">
+          Roadmap
+        </a>
+        <a href="#team" className="btn_team">
+          Team
+        </a>
       </div>
     </section>
   );

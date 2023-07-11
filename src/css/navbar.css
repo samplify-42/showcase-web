@@ -2,7 +2,15 @@
   display: flex;
   align-items: center;
   height: 60px;
-  background-color: #1e3050;
+  background-color: #01010166;
+}
+
+.navbar.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .div_logo_navbar {
@@ -40,13 +48,11 @@
 .div_marketplace_navbar {
   width: 50%;
   display: flex;
-  justify-content: center;
   margin-right: auto;
 }
 
 .div_navigation_navbar {
   width: 25%;
-  margin-left: auto;
   display: flex;
   justify-content: center;
 }
