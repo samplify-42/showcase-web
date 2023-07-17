@@ -5,6 +5,7 @@ import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
 import Team from './pages/Team';
 import Footer from './components/Footer';
+import Security from './pages/Security';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -58,7 +59,7 @@ function App() {
             paddingTop: '50px',
           }}
         >
-          <h1>security</h1>
+          <Security />
         </Flex>
       </section>
       <section className="section">
