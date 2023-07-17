@@ -58,7 +58,7 @@ function App() {
             paddingTop: '50px',
           }}
         >
-          <h1>Security</h1>
+          <h1>security</h1>
         </Flex>
       </section>
       <section className="section">
