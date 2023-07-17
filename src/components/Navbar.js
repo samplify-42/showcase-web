@@ -6,27 +6,27 @@ function Navbar() {
   return (
     <section id="#myMenu" className="navbar navbar-fixed">
       <div className="div_logo_navbar">
-        <a href="#context">
+        <a href="#context" className="content-logo">
           <img className="logo" alt="Samplify" src={Logo}></img>
         </a>
       </div>
-      <div className="div_marketplace_navbar">
+      <a href="#context" className="div_marketplace_navbar">
         <button style={{fontWeight: 'bold'}}>MarketPlace</button>
-      </div>
+      </a>
       <div className="div_navigation_navbar">
-        <a href="#context" className="btn_accueil">
+        <a href="#context" className="btn_accueil navbar-link">
           Accueil
         </a>
-        <a href="#tuto" className="btn_roadmap">
+        <a href="#tuto" className="btn_roadmap navbar-link">
           Tutoriel
         </a>
-        <a href="#security" className="btn_roadmap">
+        <a href="#security" className="btn_roadmap navbar-link">
           Securité
         </a>
-        <a href="#roadmap" className="btn_team">
+        <a href="#roadmap" className="btn_team navbar-link">
           Roadmap
         </a>
-        <a href="#team" className="btn_team">
+        <a href="#team" className="btn_team navbar-link">
           Team
         </a>
       </div>

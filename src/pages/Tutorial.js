@@ -29,7 +29,7 @@ const Tutorial = () => {
       <Flex
         style={{
           width: '100%',
-          marginTop: '58px',
+          marginTop: '100px',
           marginLeft: '10%',
           position: 'absolute',
         }}
@@ -49,6 +49,7 @@ const Tutorial = () => {
           height: '100%',
           justifyContent: 'space-between',
           alignItems: 'center',
+          marginTop: '5%',
         }}
       >
         <Container />

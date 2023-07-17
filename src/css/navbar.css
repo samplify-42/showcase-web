@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
+  padding-right: 3%;
   height: 60px;
   background-color: #01010166;
 }
@@ -20,10 +21,23 @@
   justify-content: center;
 }
 
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
 .logo {
   width: auto;
-  height: 90%;
-  padding: 3px;
+  height: 60%;
+}
+
+.content-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .div_auth_navbar {
@@ -71,4 +85,8 @@ button {
   text-transform: uppercase;
   font-family: Lexend Deca;
   font-size: 15px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
 }
