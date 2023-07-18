@@ -5,6 +5,7 @@ import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
 import Team from './pages/Team';
 import Footer from './components/Footer';
+import Roadmap from './components/Roadmap';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -69,7 +70,7 @@ function App() {
             paddingTop: '50px',
           }}
         >
-          <h1>roadmap</h1>
+          <Roadmap></Roadmap>
         </Flex>
       </section>
       <section className="section">
