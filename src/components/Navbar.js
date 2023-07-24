@@ -27,7 +27,7 @@ function Navbar() {
           Roadmap
         </a>
         <a href="#team" className="btn_team navbar-link">
-          Team
+          Équipe
         </a>
       </div>
     </section>
