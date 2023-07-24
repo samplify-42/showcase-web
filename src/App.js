@@ -20,10 +20,6 @@ function App() {
       fixedElements: '#navbar',
       autoScrolling: true,
       scrollHorizontally: true,
-
-      afterLoad: (origin, destination) => {
-        console.log('hello');
-      },
     });
   }, []);
 
@@ -56,7 +52,6 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
-            paddingTop: '50px',
           }}
         >
           <Security />
