@@ -5,7 +5,6 @@ import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
 import Team from './pages/Team';
 import Tutorial from './pages/Tutorial';
-import Footer from './components/Footer';
 import Security from './pages/Security';
 
 function App() {
@@ -76,15 +75,6 @@ function App() {
           }}
         >
           <Team />
-        </Flex>
-      </section>
-      <section className="section">
-        <Flex
-          style={{
-            backgroundColor: 'black',
-          }}
-        >
-          <Footer />
         </Flex>
       </section>
     </div>

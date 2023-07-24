@@ -24,6 +24,7 @@ function Team() {
           justifyContent: 'left',
           marginBottom: '50px',
           marginLeft: '10%',
+          marginTop: '100px',
         }}
       >
         <Title
