@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, Flex, Badge} from '@mantine/core';
+import {FaExpeditedssl} from 'react-icons/fa';
 
 function Step() {
   return (
@@ -10,8 +11,17 @@ function Step() {
         width: '75%',
         height: '80%',
         backgroundColor: '#36566C',
+        position: 'relative',
       }}
     >
+      <FaExpeditedssl
+        style={{
+          color: '#FFFFFF',
+          fontSize: '200px',
+          position: 'absolute',
+          top: '350px',
+        }}
+      />
       <h1
         style={{
           color: 'white',
@@ -27,6 +37,7 @@ function Step() {
           marginBottom: '100px',
         }}
       >
+        {/* Premier Flex */}
         <Flex
           style={{
             borderRadius: '10px',
@@ -34,6 +45,7 @@ function Step() {
             height: '200px',
             width: '275px',
             position: 'relative',
+            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
           }}
         >
           <Badge
@@ -82,6 +94,7 @@ function Step() {
           </Flex>
         </Flex>
 
+        {/* Second Flex */}
         <Flex
           style={{
             borderRadius: '10px',
@@ -89,6 +102,7 @@ function Step() {
             height: '200px',
             width: '275px',
             position: 'relative',
+            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
           }}
         >
           <Badge
@@ -137,13 +151,13 @@ function Step() {
           </Flex>
         </Flex>
       </Flex>
-
       <Flex
         style={{
           justifyContent: 'space-between',
           width: '100%',
         }}
       >
+        {/* Troisième Flex */}
         <Flex
           style={{
             borderRadius: '10px',
@@ -151,6 +165,7 @@ function Step() {
             height: '200px',
             width: '275px',
             position: 'relative',
+            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
           }}
         >
           <Badge
@@ -199,6 +214,8 @@ function Step() {
           </Flex>
         </Flex>
 
+        {/* Quatrième Flex */}
+
         <Flex
           style={{
             borderRadius: '10px',
@@ -206,6 +223,7 @@ function Step() {
             height: '200px',
             width: '275px',
             position: 'relative',
+            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
           }}
         >
           <Badge
