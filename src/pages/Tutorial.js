@@ -1,5 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import {Flex, Title, Image} from '@mantine/core';
+import first from './../assets/first.png';
+import second from './../assets/second.png';
+import third from './../assets/first.png';
 
 const Container = ({imagePath}) => {
   return (
@@ -21,67 +24,6 @@ const Container = ({imagePath}) => {
 };
 
 const Tutorial = () => {
-  const [imageOnePath, setImageOnePath] = useState('');
-  const [imageTwoPath, setImageTwoPath] = useState('');
-  const [imageThreePath, setImageThreePath] = useState('');
-
-  useEffect(() => {
-    const fetchImageOne = async () => {
-      try {
-        const response = await fetch(
-          'http://localhost:3000/api/files/first.png',
-        );
-        if (response.ok) {
-          const blob = await response.blob();
-          const imageUrl = URL.createObjectURL(blob);
-          setImageOnePath(imageUrl);
-        } else {
-          console.error("Impossible de récupérer l'image.");
-        }
-      } catch (error) {
-        console.error("Erreur lors de la récupération de l'image :", error);
-      }
-    };
-
-    const fetchImageTwo = async () => {
-      try {
-        const response = await fetch(
-          'http://localhost:3000/api/files/second.png',
-        );
-        if (response.ok) {
-          const blob = await response.blob();
-          const imageUrl = URL.createObjectURL(blob);
-          setImageTwoPath(imageUrl);
-        } else {
-          console.error("Impossible de récupérer l'image.");
-        }
-      } catch (error) {
-        console.error("Erreur lors de la récupération de l'image :", error);
-      }
-    };
-
-    const fetchImageThree = async () => {
-      try {
-        const response = await fetch(
-          'http://localhost:3000/api/files/third_t.png',
-        );
-        if (response.ok) {
-          const blob = await response.blob();
-          const imageUrl = URL.createObjectURL(blob);
-          setImageThreePath(imageUrl);
-        } else {
-          console.error("Impossible de récupérer l'image.");
-        }
-      } catch (error) {
-        console.error("Erreur lors de la récupération de l'image :", error);
-      }
-    };
-
-    fetchImageOne();
-    fetchImageTwo();
-    fetchImageThree();
-  }, []);
-
   return (
     <Flex
       style={{
@@ -118,9 +60,9 @@ const Tutorial = () => {
           marginTop: '5%',
         }}
       >
-        <Container imagePath={imageOnePath} />
-        <Container imagePath={imageTwoPath} />
-        <Container imagePath={imageThreePath} />
+        <Container imagePath={first} />
+        <Container imagePath={second} />
+        <Container imagePath={third} />
       </Flex>
     </Flex>
   );
