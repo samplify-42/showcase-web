@@ -5,6 +5,7 @@ import {Flex} from '@mantine/core';
 import Navbar from './components/Navbar';
 import Team from './pages/Team';
 import Tutorial from './pages/Tutorial';
+import Footer from './components/Footer';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -79,6 +80,15 @@ function App() {
           }}
         >
           <Team />
+        </Flex>
+      </section>
+      <section className="section">
+        <Flex
+          style={{
+            backgroundColor: 'black',
+          }}
+        >
+          <Footer />
         </Flex>
       </section>
     </div>
