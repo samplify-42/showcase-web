@@ -1,8 +1,8 @@
 import React from 'react';
 import {Flex, Title, Image} from '@mantine/core';
-import first from './../assets/first.png';
-import second from './../assets/second.png';
-import third from './../assets/third_t.png';
+import first from './../images/first.png';
+import second from './../images/second.png';
+import third from './../images/third_t.png';
 
 const Container = ({imagePath}) => {
   return (
