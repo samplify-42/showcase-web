@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Team from './pages/Team';
 import Tutorial from './pages/Tutorial';
 import Footer from './components/Footer';
+import Security from './pages/Security';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -58,7 +59,7 @@ function App() {
             paddingTop: '50px',
           }}
         >
-          <h1>Security</h1>
+          <Security />
         </Flex>
       </section>
       <section className="section">
