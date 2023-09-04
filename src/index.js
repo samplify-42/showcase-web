@@ -7,7 +7,6 @@ import Roadmap from './components/Roadmap.tsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <MantineProvider withGlobalStyles withNormalizeCSS>
-    createRoot(document.getElementById('root')).render(
     <App />)
   </MantineProvider>,
 );
