@@ -1,11 +1,12 @@
 import React, {useEffect} from 'react';
 import fullpage from 'fullpage.js';
 import Context from './pages/Context';
-import {Flex} from '@mantine/core';
+import {Flex, Image, Text} from '@mantine/core';
 import Navbar from './components/Navbar';
 import Team from './pages/Team';
 import Tutorial from './pages/Tutorial';
 import Security from './pages/Security';
+import roadmap from './images/roadmap.png';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -58,13 +59,24 @@ function App() {
       </section>
       <section className="section">
         <Flex
+          direction={'column'}
           style={{
             width: '100vw',
             height: '100vh',
-            paddingTop: '50px',
             backgroundColor: '#36566C',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
-        ></Flex>
+        >
+          <Text size={40} color="white">
+            Roadmap
+          </Text>
+          <Image
+            style={{width: '70%', marginBottom: '20px'}}
+            alt="image_equipe_1"
+            src={roadmap}
+          />
+        </Flex>
       </section>
       <section className="section">
         <Flex
