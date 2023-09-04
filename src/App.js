@@ -9,6 +9,8 @@ import Roadmap from './components/Roadmap.tsx';
 import * as THREE from 'three';
 import {useRef, useState} from 'react';
 import {Canvas, useFrame} from '@react-three/fiber';
+import Tutorial from './pages/Tutorial';
+import Security from './pages/Security';
 
 function App() {
   const fullpageRef = React.createRef();
@@ -22,10 +24,6 @@ function App() {
       fixedElements: '#navbar',
       autoScrolling: true,
       scrollHorizontally: true,
-
-      afterLoad: (origin, destination) => {
-        console.log('hello');
-      },
     });
   }, []);
 
@@ -48,10 +46,9 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
-            paddingTop: '50px',
           }}
         >
-          <h1>Tuto</h1>
+          <Tutorial />
         </Flex>
       </section>
       <section className="section">
@@ -59,10 +56,9 @@ function App() {
           style={{
             width: '100vw',
             height: '100vh',
-            paddingTop: '50px',
           }}
         >
-          <h1>Security</h1>
+          <Security />
         </Flex>
       </section>
       <section className="section">
@@ -93,15 +89,6 @@ function App() {
           }}
         >
           <Team />
-        </Flex>
-      </section>
-      <section className="section">
-        <Flex
-          style={{
-            backgroundColor: 'black',
-          }}
-        >
-          <Footer />
         </Flex>
       </section>
     </div>

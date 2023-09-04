@@ -16,6 +16,7 @@ function Team() {
         height: '100vh',
         width: '100vw',
         backgroundColor: '#284B63',
+        position: 'relative',
       }}
     >
       <Flex
@@ -29,6 +30,8 @@ function Team() {
         <Title
           style={{
             color: 'white',
+            position: 'absolute',
+            marginTop: '20px',
           }}
         >
           Equipe
