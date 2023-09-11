@@ -10,9 +10,7 @@ function Navbar() {
           <img className="logo" alt="Samplify" src={Logo}></img>
         </a>
       </div>
-      <a href="#context" className="div_marketplace_navbar">
-        <button style={{fontWeight: 'bold'}}>MarketPlace</button>
-      </a>
+      <a href="#context" className="div_marketplace_navbar"></a>
       <div className="div_navigation_navbar">
         <a href="#context" className="btn_accueil navbar-link">
           Accueil

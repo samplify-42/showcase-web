@@ -50,7 +50,7 @@ const Context = () => {
             Explorez l'essence de la créativité musicale <br />
             Samples et échantillons d'exception pour sublimer votre musique
           </Text>
-          <Text align="center" size={10} color="gray">
+          <Text align="center" size={20} color="white">
             Plongez dans une collection unique de samples NFT et laissez votre
             créativité s'envoler.
           </Text>
